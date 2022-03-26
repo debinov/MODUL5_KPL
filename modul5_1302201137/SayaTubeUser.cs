@@ -39,6 +39,25 @@ namespace modul5_1302201137
             Console.WriteLine("Second Video Titlel: " + Uploaded_Videos.Count);
         }
 
-       
+        public static int DesignbyContrast(int username, List<SayaTubeVideo> Uploaded_Videos)
+        {
+            Debug.Assert(username <= int.MaxValue && username >= int.MinValue);
+
+            int Output;
+            try
+            {
+                Output = checked(username);
+                Console.WriteLine("Dilakukan Pengecekan Dengan Lancar " + e.Message);
+            }
+
+            catch (OverflowException)
+            {
+                Console.WriteLine("Terjadi overflow pada program maka output menjadi 0");
+                Output = 0;
+            }
+
+            return Output;
+        }
+
     }
 }

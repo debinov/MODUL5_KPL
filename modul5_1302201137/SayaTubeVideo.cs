@@ -38,5 +38,25 @@ namespace modul5_1302201137
             Console.WriteLine();
 
         }
+
+        public static int DesignbyContrast(int id, int playCount)
+        {
+            Debug.Assert(id <= int.MaxValue && id >= int.MinValue);
+            Debug.Assert(playCount <= int.MaxValue && playCount >= int.MinValue);
+
+            int Output;
+            try
+            {
+                Output = checked(id);
+                Console.WriteLine("Dilakukan Pengecekan Dengan Lancar " + e.Message);
+            }
+            catch (OverflowException)
+            {
+                Console.WriteLine("Terjadi overflow pada program maka output menjadi 0");
+                Output = 0;
+            }
+            return Output;
+        }
     }
 }
+    
